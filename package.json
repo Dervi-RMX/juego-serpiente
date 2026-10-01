@@ -1,0 +1,17 @@
+{
+  "name": "juego-serpiente",
+  "version": "1.0.0",
+  "description": "Juego de la serpiente con login usando Express y sesiones",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3"
+  }
+}
