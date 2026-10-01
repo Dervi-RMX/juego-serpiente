@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Juego de la Serpiente</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #16213e; color: #fff;
+    min-height: 100vh; display: flex;
+    align-items: center; justify-content: center;
+  }
+  .game-container { text-align: center; }
+  .game-container h1 { margin-bottom: 15px; }
+  .hud {
+    display: flex; justify-content: space-between;
+    margin-bottom: 10px; font-size: 16px;
+  }
+  canvas {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: block;
+  }
+  .controls { margin-top: 12px; font-size: 13px; color: #aaa; }
+</style>
+</head>
+<body>
+  <div class="game-container">
+    <h1>🐍 Come manzanas 🍎</h1>
+    <div class="hud">
+      <span>Puntos: <b id="puntos">0</b></span>
+      <span>Récord: <b id="record">0</b></span>
+    </div>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <p class="controls">Usa las <b>flechas</b> o <b>WASD</b>. Pulsa <b>Espacio</b> para reiniciar.</p>
+  </div>
+  <script src="juego.js"></script>
+</body>
+</html>
